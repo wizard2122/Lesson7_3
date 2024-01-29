@@ -22,6 +22,9 @@ namespace Assets.Visitor
                 case EnemyType.Ork:
                     return Instantiate(_orkPrefab);
 
+                case EnemyType.Robot:
+                    return Instantiate(_elfPrefab);
+
                 default:
                     throw new ArgumentException(nameof(type));
             }
